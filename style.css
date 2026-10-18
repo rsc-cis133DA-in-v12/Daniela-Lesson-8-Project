@@ -1,0 +1,106 @@
+/*
+Author: MEID1234
+Course: CIS133DA Section 2
+Lesson: 8
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0; /* Body margin sıfırlandı */
+}
+
+/* Header Styles */
+header {
+  background: #2d3437 url(../images/background.jpg) no-repeat center; /* Relative path stil dosyasına göre ayarlandı */
+  background-size: cover;
+  color: white;
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed; /* Navbar sayfa üstüne sabitlendi */
+  top: 0;
+  width: 100%;
+  background-color: #2d3437;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  float: left; /* Liste elemanları sola yaslandı */
+}
+
+nav ul li.right {
+  float: right; /* 'right' sınıfına sahip elemanı sağa yasla */
+  background-color: #4a4a4a; /* Arka plan rengi */
+  color: #fff; /* Yazı rengi */
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Aktif sayfa linki */
+nav ul li a.active {
+  background-color: #0984e3; /* İstediğin renk */
+  color: white; /* Yazı rengi */
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Wrapper stil */
+#wrapper {
+  background-color: #d3d3d3; /* Açık gri */
+  margin-top: 50px; /* Üstten boşluk */
+  padding: 15px;
+}
+
+/* Main bölüm stil */
+main {
+  width: 900px;
+  box-sizing: border-box; /* padding, border genişlikten düşer */
+  margin: 0 auto; /* Ortala */
+}
+
+/* Aside stil */
+aside {
+  background-color: #a9a9a9; /* Orta gri */
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+}
+
+/* Aside içindeki resimler */
+aside img {
+  width: 100%; /* Container genişliğini doldur */
+  height: 200px;
+  object-fit: cover; /* Resmi kırparak sığdır */
+  opacity: 0.6; /* %60 şeffaflık */
+  transition: opacity 0.3s ease;
+}
+
+/* Resim üzerine gelince */
+aside img:hover {
+  opacity: 1; /* Tam görünür hale getir */
+}
+
+/* Aside içindeki paragraflar */
+aside p {
+  margin: 0;
+  color: gray;
+}
+
+/* Aside içindeki linkler */
+aside a {
+  color: #0984e3; /* İstediğin renk */
+  text-decoration: none;
+}
